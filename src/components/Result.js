@@ -10,9 +10,9 @@ class Result extends React.Component {
   }
 
   componentDidMount(){
-    console.log(1);
-    
-    fetch('http://localhost:8000/get-image', {
+    let fileName = this.props.location.state; 
+    //console.log(this.props.location.state);
+    fetch(`http://localhost:8000/get-image/${fileName}`, {
     })
     .then((response) => {
       return response.blob();
@@ -28,7 +28,7 @@ class Result extends React.Component {
     return (
       <div>
         <h2>Your covid result is: </h2>
-        <img src={this.state.imageURL} />
+        <img src={this.state.imageURL} alt="Covid_Result" />
       </div>
     );
   }
