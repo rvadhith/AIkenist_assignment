@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Homescreen.css';
 
 class Homescreen extends React.Component {
   constructor(props) {
@@ -64,8 +65,9 @@ class Homescreen extends React.Component {
     return (
 
       <div>
+        <h3>Please upload your X-ray image file for Covid detection</h3>
         <form onSubmit={this.handleUploadImage}>
-          <div>
+          <div id="form-segment">
             <input ref={(ref) => { this.uploadInput = ref; }} type="file" onChange={this.onFileChange} />
             <button type="submit">Detect</button>
           </div>

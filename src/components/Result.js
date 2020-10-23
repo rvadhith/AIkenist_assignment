@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Result.css';
 
 class Result extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class Result extends React.Component {
     return (
       <div>
         <h2>Your covid result is: </h2>
-        <img src={this.state.imageURL} alt="Covid_Result" />
+        <img id="result-image" src={this.state.imageURL} alt="Covid_Result" height="400px" width="400px" />
       </div>
     );
   }
