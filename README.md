@@ -8,5 +8,5 @@ Homescreen.js:<br/>
 -Once uploaded, it will proceed to the result page <br/>
 
 Result.js:<br/>
--This component fetches the image file from backend server
+-This component fetches the image file from backend server <br/>
 -Image will be displayed once after being fetched
